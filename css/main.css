@@ -1,0 +1,64 @@
+
+.mid1{
+        padding:50px;
+
+}
+.mid2{
+    background-color: whitesmoke;
+    border-radius: 5px 0px 0px 5px;
+    padding:50px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.mid3{
+    background-color: rgba(19, 35, 47, 0.9);
+    border-radius: 5px 0px 0px 5px;
+    padding:50px;
+    padding-top: 30px;
+    overflow: hidden;
+}
+.low1{
+        padding:50px;
+        background-color: rgba(19, 35, 47, 0.9);
+}
+.low2{
+    background-color: #222;
+        padding:50px;
+    min-height:50px;
+}
+
+html{
+    background : url("/images/emilia1.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.certImage{
+    margin: 3%;
+}
+.sportImage{
+    float: left;
+    margin: 3%;
+    transition-duration: .5s;
+    
+}
+.rotate{
+-ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+    transform: rotate(180deg);
+}
+.shadow{
+    box-shadow: 0 1px 10px 4px rgba(19, 35, 47, 0.3);
+}
+textarea{
+    border: 1px solid whitesmoke;
+}
+textarea:focus{
+    border-color: #71FFCE;
+}
+input:focus{
+    border-color: #71FFCE;
+}
+
