@@ -61,12 +61,51 @@ html{
     box-shadow: 0 1px 10px 4px rgba(19, 35, 47, 0.3);
 }
 textarea{
-    border: 1px solid whitesmoke;
+    border: 2px solid whitesmoke;
 }
 textarea:focus{
     border-color: #71FFCE;
 }
 input:focus{
     border-color: #71FFCE;
+}
+.buttonX{
+ padding:5px 15px;
+ border-radius:5px;
+ height:50px;
+ width: 95%;
+ background-color:transparent;
+ border: 2px solid #71FFCE;
+    margin:10px;
+ color: #71FFCE;
+ font-weight: 600;
+ font-size:20px;
+ text-align: left;
+    transition-duration: .4s;
+    display: none;
+}
+.buttonX:hover{
+     background-color:#71FFCE;
+    color: rgba(19, 35, 47, 1);
+}
+@media (max-width: 650px){
+    #textArea1{
+        display:none;
+    }
+    #textArea2{
+        display:none;
+    }
+    #textArea3{
+        display:none;
+    }
+    #button1{
+        display:block;
+    }
+     #button2{
+        display:block;
+    }
+     #button3{
+        display:block;
+    }
 }
 
