@@ -133,7 +133,7 @@ input:focus {
     font-weight: 600;
     opacity: .95;
     overflow: hidden;
-    / padding: 0px;
+    /*/ padding: 0px;*/
     padding: 10px 25px 35px 25px;
 }
 .closeIt {
