@@ -503,7 +503,7 @@ button:focus {
     min-height: 75px;
     overflow: visible;
     width: 100%;
-    background: url(/images/navbar2.png) no-repeat center center ;
+    background: url(../images/navbar2.png) no-repeat center center ;
     background-color: #71FFCE;
 }
 background-color: #71FFCE;

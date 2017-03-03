@@ -1,5 +1,26 @@
 .mid1 {
     padding: 50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+#topDiv{
+        background: url("../images/trx2.jpg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.mid5 {
+    padding: 90px 0px;
+    /*background: url("../images/trx1.jpg") no-repeat center center fixed;*/
+   background-color:whitesmoke;        
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 .mid2 {
     background-color: whitesmoke;
@@ -9,11 +30,15 @@
     overflow: hidden;
 }
 .mid3 {
-    background-color: rgba(19, 35, 47, 0.9);
+   background-color: rgba(19, 35, 47, 0.9);
+   /*/background-color:whitesmoke;*/
     border-radius: 5px 0px 0px 5px;
     padding: 50px;
     padding-top: 30px;
     overflow: hidden;
+}
+.mid7 {
+   background-color: rgba(19, 35, 47, 0.9);
 }
 .low1 {
     padding: 50px;
@@ -25,7 +50,7 @@
     min-height: 50px;
 }
 .low10 {
-    background: url("/images/map.jpg") no-repeat center center fixed;
+    background: url("../images/map.jpg") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -33,11 +58,6 @@
     padding: 65px 0px;
 }
 html {
-    background: url("/images/emilia1.jpg") no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
 }
 .certImage {
     margin: 3%;
@@ -175,6 +195,6 @@ input:focus {
     }
 }
 body {
-    /font-family: 'Lora', serif;
+    font-family: 'Playfair Display', serif;
     font-weight: 600;
 }
