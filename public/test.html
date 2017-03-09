@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>EmiliaFit</title>
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+	<script src="./test.js"></script>
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
+		crossorigin="anonymous">
+	<!--My CSS -->
+	<link rel="stylesheet" href="css/test.css" />
+	<link rel="stylesheet" href="css/agile.1.css" />
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Droid+Sans|Lora' rel='stylesheet' type='text/css'>
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
+
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+		crossorigin="anonymous"></script>
+	<script>
+        $(document).ready(function() {
+            $('a[href^="#"]').on('click', function(e) {
+                e.preventDefault();
+
+                var target = this.hash;
+                var $target = $(target);
+
+                $('html, body').stop().animate({
+                    'scrollTop': ($target.offset().top - 150)
+                }, 400, 'swing', function() {
+                    window.location.hash = target;
+                });
+            });
+        });
+    </script>
+</head>
+
+<body>
+	<div id="home"></div>
+	<nav id="eNav" class="navbar navbar-default topbarappear " style="margin: 0; position: fixed; z-index: 5000; top:0px; transition-duration: .9s;">
+		<div class="container-fluid" style="padding-top: 6px">
+			<!-- Brand and toggle get grouped for better mobile display -->
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+				<a class="navbar-brand" href="#home" style="font-size: 13px; margin-left:2%">EmiliaFit</a>
+			</div>
+			<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav" style="float: right; margin-right: 2%; padding-top:2px;">
+					<li><a href="#about" >About</a></li>
+					<li><a href="#coaching" >Coaching</a></li>
+					<li><a href="#nutrition" >Nutrition</a></li>
+					<li><a href="#contact" >Contact</a></li>
+				</ul>
+			</div>
+			<!-- /.navbar-collapse -->
+		</div>
+		<!-- /.container-fluid -->
+	</nav>
+	<div class="container-fluid " style="padding: 0px;">
+		<div id="topDiv" class="col-xs-12 ">
+			<img src='./images/trx3.jpg' class='darken' width='100%' height: 'auto' style='margin-top:50px; position:relative'/>
+			<div style="position: absolute; top: 20%; left:15%;" >
+					<h1 class="" style="color: #fff;font-family: 'Calibre', 'Helvetica Neue', 'Helvetica', 'Roboto', 'Arial', sans-serif; font-weight: 100; font-size: 36px; line-height: 1.2; text-transform: none; letter-spacing: normal;margin-bottom: 10px;" >Emilia Levin Fitness</h1>
+				   <button class="button"  onClick="showMore(2);" style="">GET STARTED</button>
+			</div>
+					
+			<!--</div>-->
+	</div>
+
+	<div class="container-fluid " style="padding: 0px 0 0px 0;">
+		<div class="col-xs-12 mid3 ">
+			<center>
+				<div id="about"></div>
+				<h1 class="section-heading">About</h1>
+			</center>
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1" style="padding:0">
+				<h4 class='text'>Born and raised in the Bay Area, fitness has always been a part of my life. I began swimming as far back as I can remember
+					and was dedicated to the sport until I left for college. I played basketball and ran cross country in high school. Hiking
+					was always (and still is) a part of my summer adventures.
+				</h4>
+				<button class=" buttonX" id="button1" onClick="showMore(1);" style="">Show More</button>
+			</div>
+			<div id="textArea1">
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1" style="padding:0">
+					<h4 class='text'>
+						Leaving for college I was under the firm belief that I would become a lawyer. I graduated with a degree in International
+						Affairs and a certificate in Jewish Studies. Unfortunately, once I graduated I knew this wasn’t the path I was going
+						to take. It wasn’t where my true passion lied. I turned to personal training when I decided I wanted to get into better
+						shape and learn more about myself and my capabilities.
+					</h4>
+				</div>
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1" style="padding:0">
+					<h4 class='text'>
+						I have always been passionate about nutrition and healthy eating, especially growing up with a mom who makes everything from
+						scratch with the best ingredients out there. The combination of exercise and nutrition made me realize that this is
+						exactly what I wanted to do with my life. I have been a personal trainer for over three years and have been fortunate
+						enough to train in Jackson Hole, Austin, and Boulder.
+					</h4>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+
+	<div class="container-fluid mid5">
+		<div class="col-xs-12 col-xs-offset-0 ">
+			<center>
+				<div>
+					<img class="certImage" src="images/cert.png" />
+					<img class="certImage" src="images/cert1.png" />
+					<img class="certImage" src="images/cert2.png" />
+					<img class="certImage" src="images/cert3.png" />
+					<img class="certImage" src="images/cert4.png" />
+				</div>
+			</center>
+
+		</div>
+	</div>
+	<div class="container-fluid" style="padding: 0;">
+		<div class="col-xs-12 mid3 ">
+			<center>
+				<div id="coaching"></div>
+				<h1 class="section-heading">Coaching</h1>
+			</center>
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1 " style="padding:0px">
+
+				<h4 class='text'>
+					My training philosophy is to help others learn about their bodies, including their physical attributes and their potential
+					for creating new possibilities for themselves. Living a healthy lifestyle is of the utmost importance to me and I hope
+					to share my experience and insight with individuals who are looking to make exercise and fitness a lifetime pursuit
+					and passion.
+
+				</h4>
+				<button class=" buttonX" id="button2" onClick="showMore(2);" style="">Show More</button>
+			</div>
+			<div id="textArea2">
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1 " style="padding:0px">
+					<h4 class='text'>
+						I believe in setting challenging but achievable goals that you will not only be able to accomplish, but will even exceed.
+						I work with individuals on a personal level, in order to create exercise routines that will fit your specific needs.
+						I take into consideration all factors of your exercise history andmotivation, current or past medical conditions, injuries,
+						and likes and dislikes about working out.
+					</h4>
+				</div>
+
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1 " style="padding:0px">
+					<h4 class='text'>
+						My training methodology combines exercise and healthy eating. I customize diverse exercise regimens that emphasize technique
+						and form. I include various modalities in my instruction such as mobility and stretching, Crossfit, TRX, weight and
+						circuit training. I am personally committed to addressing the specific fitness goals of each individual.
+					</h4>
+				</div>
+
+				<div class="col-xs-12 col-sm-10 col-sm-offset-1 " style="padding:0px">
+					<h4 class='text'>
+						Spending just an hour a day is all it takes to give your body the appreciation it deserves. I will challenge you and I will
+						push you to achieve new levels and realize your potential without injury. You will work hard during our session and
+						I promise they will be varied, energizing, and educational, leaving you with a greater understanding of yourself and
+						your capabilities.
+					</h4>
+				</div>
+			</div>
+
+		</div>
+	</div>
+	<div class="container-fluid " style="padding: 100px 0px; background-color: #f9f9f9;">
+		<div class="col-xs-12" style="max-height: 140px; overflow: hidden; ">
+			<img class="sportImage" src="images/sport1.png" />
+			<img class="sportImage" src="images/sport3.png" />
+			<img class="sportImage" src="images/sport4.png" />
+			<img class="sportImage" src="images/sport5.png" />
+			<img class="sportImage" src="images/sport6.png" />
+			<img class="sportImage" src="images/sport7.png" />
+			<img class="sportImage" src="images/sport8.png" />
+			<img class="sportImage" src="images/sport9.png" />
+			<img class="sportImage" src="images/sport10.png" />
+			<img class="sportImage" src="images/sport11.png" />
+		</div>
+	</div>
+
+	<div class="container-fluid" style="padding: 0px 0 0px 0;">
+		<div class="col-xs-12 mid3 ">
+			<center>
+				<div id="nutrition"></div>
+				<h1 class="section-heading">Nutrition</h1>
+			</center>
+			<div class="col-xs-12 col-sm-10 col-sm-offset-1 " style="padding:0px">
+				<h4 class='text'>Eating is easy, natural and for the most part, an enjoyable experience. Nutrition, however, is a daunting, confusing,
+					and ever changing subject. Facts and opinions on the impact of diet on health and longevity continue to evolve, often
+					resulting in complete confusion over what is best to eat for any one’s body type and daily needs. Building muscle and
+					reaching new plateaus of fitness is nutrition dependent and it is critical that certain, specific nutrients are consumed
+					before and after exercise periods. Exercise in the absence of nutritional considerations will not allow anyone to achieve
+					their fitness goals.
+
+				</h4>
+				<div id="textArea3">
+					<h4 class='text'>
+						I will help clarify and decipher diets and fads that are popular today and provide information about how and which foods
+						can impact fitness goals. It is important to understand macronutrients (fats, proteins, carbohydrates) and the role
+						each one of these plays in the exercising body. We will discuss sugar intake (how much is too much?), fruits and vegetables,
+						the importance of antioxidants…and anything else you can think of!
+					</h4>
+
+					<h4 class='text'>
+						I am passionate about cooking. I experiment with recipes often and I am excited to share ideas about foods you will look
+						forward to eating on a daily and weekly basis. I will help you create weekly meal plans with preparation tips that
+						will make cooking seem less overwhelming and time intensive. I will provide suggestions concerning diet and calorie
+						intake, as well as make recommendations for alternatives to processed, sugary foods that only diminish the maximum
+						potential one can accomplish from each and every workout.
+					</h4>
+				</div>
+				<button class=" buttonX" id="button3" onClick="showMore(3);" style="">Show More</button>
+			</div>
+
+		</div>
+	</div>
+
+
+	</div>
+	</div>
+
+	<div class="container-fluid low10">
+		<div class="col-xs-12 col-sm-4 col-sm-offset-7" style="padding:0 0 0 10%">
+			<div style="border: 4px solid rgba(250,250,250,.7); border-width: 0px 0px 0px 4px; padding: 0 0 0 20px;">
+				<h4 style="color:#71FFCE">Trainer San Francisco</h4>
+				<h5 style="color:rgba(250,250,250, .85); margin-bottom:15px;">San Francisco, California - Mission & South Beach</h5>
+				<h4 style="color:#71FFCE">Your home or local gym</h4>
+				<h5 style="color:rgba(250,250,250, .85); margin-bottom:15px;">San Francisco, California</h5>
+			</div>
+		</div>
+	</div>
+
+	<div class="container-fluid low1 " style="padding: 0px 20px;">
+		<div id="contact"></div>
+		<center>
+			<h1 class="section-heading">Contact</h1>
+		</center>
+
+		<form action="https://formspree.io/matt@tetonfresh.com" method="POST">
+
+			<div class="col-xs-12 " style="padding:0px 0 90px 0">
+				<div class="col-xs-12 col-sm-6 col-sm-offset-3 " style="padding-bottom:10px">
+					<center>
+						<h4 style="color:#777; max-width:450px;/font-style: italic;opacity:.8"><span class="fl">Send me a message to learn more about my services and schedule a training session</span></h4>
+				</div>
+				</center>
+				<div class="col-xs-12 col-sm-6 col-sm-offset-1 col-md-4 col-md-offset-2">
+
+					<textarea name="message" required type="text" class="" placeholder="message*" style="padding:10px;height:215px; width: 100%; background-color:#fff; border-radius:0px; color:#444;font-size:20px; margin:10px;"></textarea>
+
+				</div>
+				<div class="col-xs-12 col-sm-4">
+
+					<input name="name" required type="text" placeholder="name*" class="" style="padding:5px; border-radius:0px; height:35px; width: 100%; background-color:fff; margin:10px;"
+					/>
+
+					<input name="_replyto" required type="email" placeholder="email*" class="" style="padding:5px; border-radius:0px; height:35px; width: 100%; background-color:fff; margin:10px;"
+					/>
+
+					<input name="phoneNumber" type="phone" placeholder="phone" class="" style="padding:5px; border-radius:0px; height:35px; width: 100%; background-color:fff; margin:10px; "
+					/>
+
+					<input type="hidden" name="_next" value="http://mattlinvilleengler.github.io/#contact" />
+					<input type="text" name="_gotcha" style="display:none" />
+
+					<input type="submit" value="SEND" class=" buttonX" style="width: 100%; display: block;"></input>
+
+		</form>
+
+		</div>
+		</div>
+	</div>
+	<div class="container-fluid low2 " style="padding: 0px 40px;">
+		<h2>Emilia Levin Fitness</h2>
+	</div>
+	<script>
+        var pickupHeight;
+        var navFixed;
+        var pickupFlag = 1;
+        var servicesOpen = 1;
+        
+        $("#close").click(function(){closeIt()});        
+       txtStatus = { 1: 1, 2:1, 3:3 };
+       var showMore = function(x){
+            var txtArea = "#textArea" + x;
+            var button = "#button" + x;
+            txtStatus[x] == 1 ? (txtStatus[x] = 2, $(txtArea).show(), $(button).html("Show Less")) :  
+                (txtStatus[x] = 1, $(txtArea).hide(), $(button).html("Show More"));
+       }
+    </script>
+</body>
+
+</html>
